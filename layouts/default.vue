@@ -10,8 +10,20 @@ import NavBar from "~/components/NavBar.vue";
 export default {
   components: {
     NavBar
+  },
+  head() {
+    return {
+      titleTemplate: "%s - RL Events",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Where you can find all the events around you"
+        }
+      ]
+    };
   }
-}
+};
 </script>
 
 <style>

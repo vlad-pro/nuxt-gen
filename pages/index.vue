@@ -6,10 +6,12 @@
 
 <script>
 export default {
-
-}
+  head() {
+    return {
+      title: "Event Listing"
+    };
+  }
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
