@@ -8,10 +8,12 @@
     "start": "nuxt start",
     "export": "nuxt export",
     "serve": "nuxt serve",
-    "heroku-prostbuild": "npm run build"
+    "heroku-prostbuild": "npm run build",
+    "generate": "nuxt build --target static && nuxt export"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.11.0",
+    "@nuxtjs/axios": "^5.12.0",
+    "http-server": "^0.12.3",
     "json-server": "^0.16.1",
     "nuxt": "^2.13.0"
   },
