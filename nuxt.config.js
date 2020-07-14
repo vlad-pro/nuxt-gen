@@ -1,4 +1,4 @@
-
+import EventService from './services/EventService.js'
 export default {
   /*
   ** Nuxt rendering mode
@@ -67,5 +67,14 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+  },
+  generate: {
+    routes: () => {
+      return EventService.getEvents().then(response => {
+        return response.data.map(event => {
+          return "/event/" + event.id
+        })
+      })
+    }
   }
 }
