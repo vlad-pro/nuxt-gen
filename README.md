@@ -1,3 +1,5 @@
+## [Live Demo :rocket:](https://mystifying-johnson-e0bcf3.netlify.app)
+
 # nuxt-gen
 
 ## Build Setup
